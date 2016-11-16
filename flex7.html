@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1"/>
+		<title>子元素纵向排版</title>
+		<style type="text/css">
+			body{margin: 0px;}
+			#father{
+				display: flex;
+				align-items: stretch;
+				background: #ff0;
+				border: 1px solid #f00;
+				width: 400px;
+				height: 500px;
+			}
+			div span{
+				font:bold 16px/1.5 Arial;
+				color: #fff;
+			}
+			#son1{background: #f90;width: 50px;min-height: 150px;}
+			#son2{background: #090;width: 50px;max-height: 300px;}
+			#son3{background: #119aef;width: 50px;}
+		</style>
+	</head>
+	<body>
+		<div id="father">
+			<span id="son1">
+				内容一
+			</span>
+			<span id="son2">
+				内容二
+			</span>
+			<span id="son3">
+				内容三
+			</span>
+		</div>
+	</body>
+</html>
